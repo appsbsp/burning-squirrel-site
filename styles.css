@@ -508,6 +508,9 @@ footer {
   border-top: 1px solid var(--border);
 }
 
+footer a { color: var(--text-dim); text-decoration: underline; transition: color 0.15s ease; }
+footer a:hover { color: var(--app-accent, var(--text)); }
+
 /* ---------- responsive ---------- */
 
 @media (max-width: 760px) {

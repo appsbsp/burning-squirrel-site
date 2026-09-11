@@ -387,6 +387,21 @@ section, main {
   display: block;
 }
 
+.screenshot-frame--ipad {
+  width: 280px;
+  aspect-ratio: 2064 / 2752;
+}
+
+.screenshots-group + .screenshots-group { margin-top: 28px; }
+
+.screenshots-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin: 0 0 12px;
+}
+
 /* ---------- tags / pricing ---------- */
 
 #audience { border-top: 1px solid var(--border); }
@@ -527,4 +542,5 @@ footer a:hover { color: var(--app-accent-ink, var(--text)); }
   .apps-grid { grid-auto-rows: 235px; }
   .service-card, .feature-card, .app-card { grid-column: span 1; }
   .screenshot-frame { width: 150px; }
+  .screenshot-frame--ipad { width: 200px; }
 }

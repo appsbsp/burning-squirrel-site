@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kicks Tracker Privacy &mdash; Burning Squirrel Productions</title>
+<meta name="description" content="Kicks Tracker's privacy policy: no accounts, no analytics, no third parties &mdash; your shoes and workouts stay in your own private iCloud.">
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root { --app-accent: #4caf6d; --big-letter: "K"; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">
+      <img src="icons/logo.jpeg" alt="Burning Squirrel Productions logo">
+      Burning Squirrel Productions
+    </div>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="breadcrumb"><a href="kicks-tracker.html">Kicks Tracker</a></div>
+
+<section class="hero">
+  <div class="app-icon"><img src="icons/kicks-tracker.png" alt="Kicks Tracker app icon" onerror="this.remove()"><span class="icon-fallback">👟</span></div>
+  <p class="meta-line">Kicks Tracker &middot; Privacy Policy</p>
+  <h1>Privacy</h1>
+  <p class="tagline">The short version: your shoes and workouts live in your iCloud, not ours. We built the app so there was never anything of yours to collect.</p>
+</section>
+
+<section id="on-device" class="legal-section">
+  <h2 class="section-title">On Your Device</h2>
+  <p class="about-text">Kicks Tracker keeps its own copy of your shoes, mileage, and rotation history in the app's private storage area on your iPhone or iPad &mdash; nowhere else on the device, and nowhere the app can be reached from except by you opening it.</p>
+  <p class="about-text">A handful of small preferences &mdash; things like appearance and sync mode &mdash; are stored the same way, using Apple's standard UserDefaults mechanism. These are settings, not content: none of them describe you, and none of them leave the device except as part of an iCloud device backup you control.</p>
+</section>
+
+<section id="health" class="legal-section">
+  <h2 class="section-title">Apple Health</h2>
+  <p class="about-text">Kicks Tracker asks for read-only access to your running and walking workouts in Apple Health so it can assign their distance to the right pair of shoes automatically. It only reads workout type, distance, and date &mdash; it never reads any other Health data, and it never writes anything back to Health.</p>
+  <p class="about-text">Imported workout distances are copied into Kicks Tracker's own on-device database alongside your shoe records; Health data is never sent anywhere off your device. You can review or revoke this access at any time in Settings &rarr; Privacy &amp; Security &rarr; Health &rarr; Kicks Tracker &mdash; doing so simply stops new workouts from being imported going forward.</p>
+</section>
+
+<section id="on-icloud" class="legal-section">
+  <h2 class="section-title">Your Private iCloud</h2>
+  <p class="about-text">If you leave sync turned on, each of your shoes, mileage, and rotation history is also mirrored to your own private CloudKit database &mdash; container iCloud.com.burningsquirrelproductions.Kicks-Tracker &mdash; the same private-by-default storage Apple gives every app, tied to your Apple ID. It is not a shared or public database: only devices signed into your own iCloud account can read it, the same way only your devices can read your iCloud Photos or iCloud Drive files.</p>
+  <p class="about-text">We &mdash; the developer &mdash; have no access to this database. There is no server of ours in the loop, no copy on our infrastructure, and no way for us to see a single one of your shoes or workouts. Apple's standard iCloud security and encryption protects it the same way it protects everything else in your iCloud account.</p>
+</section>
+
+<section id="never" class="legal-section">
+  <h2 class="section-title">What We Never Do</h2>
+  <div class="tags">
+    <div class="tag">No account or sign-in</div>
+    <div class="tag">No analytics or crash reporting</div>
+    <div class="tag">No advertising or ad SDKs</div>
+    <div class="tag">No third-party services of any kind</div>
+    <div class="tag">Nothing sold, shared, or sent anywhere on our behalf</div>
+  </div>
+</section>
+
+<section id="control" class="legal-section">
+  <h2 class="section-title">Your Control</h2>
+  <p class="about-text">Settings &rarr; iCloud lets you switch to local only at any time. Doing so deletes Kicks Tracker's iCloud copy of your shoes and workouts (after you confirm) and stops syncing from then on &mdash; your data stays only on this device.</p>
+  <p class="about-text">Deleting the app removes its on-device copy along with it. There's no "delete my account" step, because there was never an account to begin with.</p>
+</section>
+
+<section id="fine-print" class="legal-section legal-fine-print" style="padding-bottom: 40px;">
+  <h2 class="section-title">The Fine Print</h2>
+  <h3>Children</h3>
+  <p class="about-text">Kicks Tracker is not directed at children and isn't designed to collect information from anyone &mdash; which, given everything above, is true regardless of who's using it.</p>
+  <h3>Changes</h3>
+  <p class="about-text">If this policy ever changes &mdash; say, because a future version adds a feature that touches data differently &mdash; this page will be updated and the date below will move.</p>
+  <h3>Contact</h3>
+  <p class="about-text">Questions about this policy or the app can go to <a class="contact-email" style="font-size: 1rem;" href="mailto:apps@burningsquirrelproductions.com">apps@burningsquirrelproductions.com</a>.</p>
+  <p class="legal-updated">Last updated 2026-09-11</p>
+</section>
+
+<footer>
+  &copy; 2026 Burning Squirrel Productions. All rights reserved.
+</footer>
+
+</body>
+</html>

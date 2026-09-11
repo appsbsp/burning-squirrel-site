@@ -471,6 +471,30 @@ section, main {
 .contact-email:hover { opacity: 0.75; }
 .contact-email:active { opacity: 0.5; }
 
+/* ---------- legal / policy pages ---------- */
+
+.legal-section { border-top: 1px solid var(--border); }
+
+.legal-section .about-text + .about-text { margin-top: 18px; }
+
+.legal-fine-print h3 {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.legal-fine-print .about-text { font-size: 0.95rem; margin-bottom: 22px; }
+
+.legal-updated {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+
 /* ---------- footer ---------- */
 
 footer {

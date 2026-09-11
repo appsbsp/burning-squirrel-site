@@ -1,17 +1,20 @@
 /* Burning Squirrel Productions — Metro / Zune design language
-   Flat color tiles, true-black canvas, huge cropped Segoe-style type,
-   sharp square corners, no gradients, no shadows, no rounded corners. */
+   Flat color tiles, huge cropped Segoe-style type, sharp square corners,
+   no gradients, no shadows, no rounded corners. Palette pulled straight
+   from the app icons: warm off-white canvas, muted per-app accents. */
 
 :root {
-  --bg: #000000;
-  --bg-alt: #121212;
-  --bg-panel: #161616;
-  --accent: #ff6a00;
-  --accent-dim: #cc5200;
-  --text: #ffffff;
-  --text-dim: #949494;
-  --border: #262626;
+  --bg: #f7f6f2;
+  --bg-alt: #efece3;
+  --bg-panel: #eae6db;
+  --accent: #937c6c;
+  --accent-dim: #7a6456;
+  --accent-ink: #766356;
+  --text: #1d1a15;
+  --text-dim: #6f6a5c;
+  --border: #ddd7c8;
   --app-accent: var(--accent);
+  --app-accent-ink: var(--accent-ink);
   --big-letter: "";
 }
 
@@ -100,7 +103,7 @@ nav {
 
 .breadcrumb a { color: var(--text-dim); transition: color 0.15s ease; }
 .breadcrumb a:before { content: "‹ "; }
-.breadcrumb a:hover { color: var(--app-accent); }
+.breadcrumb a:hover { color: var(--app-accent-ink); }
 
 /* ---------- hero / panorama ---------- */
 
@@ -125,7 +128,7 @@ nav {
   font-weight: 700;
   line-height: 1;
   color: var(--app-accent);
-  opacity: 0.08;
+  opacity: 0.14;
   pointer-events: none;
   user-select: none;
   z-index: 0;
@@ -165,7 +168,7 @@ nav {
 }
 
 .meta-line {
-  color: var(--app-accent);
+  color: var(--app-accent-ink);
   font-size: 0.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -218,7 +221,7 @@ nav {
 .btn-primary:active { opacity: 0.55; }
 
 .btn-secondary { border-color: var(--border); color: var(--text); }
-.btn-secondary:hover { border-color: var(--app-accent); color: var(--app-accent); }
+.btn-secondary:hover { border-color: var(--app-accent-ink); color: var(--app-accent-ink); }
 .btn-secondary:active { opacity: 0.55; }
 
 /* ---------- sections ---------- */
@@ -310,14 +313,14 @@ section, main {
 }
 
 .service-card p, .feature-card p, .app-card p {
-  color: rgba(255,255,255,0.75);
+  color: var(--text-dim);
   font-size: 0.88rem;
   font-weight: 300;
 }
 
 /* tiles carry the app's/service's accent as a solid fill */
 .service-card, .app-card { background: var(--app-color, var(--accent)); color: #000; }
-.service-card p, .app-card p { color: rgba(0,0,0,0.68); }
+.service-card p, .app-card p { color: rgba(0,0,0,0.9); }
 .app-card-status {
   align-self: flex-start;
   margin-top: 14px;
@@ -415,7 +418,7 @@ section, main {
 }
 
 .price-box h3 {
-  color: var(--app-accent);
+  color: var(--app-accent-ink);
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-size: 1.05rem;
@@ -449,7 +452,7 @@ section, main {
 }
 
 #next-app a.next-link:before { content: "‹ "; }
-#next-app a.next-link:hover { color: var(--app-accent); }
+#next-app a.next-link:hover { color: var(--app-accent-ink); }
 
 #contact p {
   color: var(--text-dim);
@@ -509,7 +512,7 @@ footer {
 }
 
 footer a { color: var(--text-dim); text-decoration: underline; transition: color 0.15s ease; }
-footer a:hover { color: var(--app-accent, var(--text)); }
+footer a:hover { color: var(--app-accent-ink, var(--text)); }
 
 /* ---------- responsive ---------- */
 

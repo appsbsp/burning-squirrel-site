@@ -373,7 +373,7 @@ section, main {
 
 .screenshot-frame {
   width: 200px;
-  aspect-ratio: 1206 / 2622;
+  aspect-ratio: 1284 / 2778;
   border: 2px solid var(--border);
   background: var(--bg-panel);
   flex-shrink: 0;

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweep Privacy &mdash; Burning Squirrel Productions</title>
+<meta name="description" content="Sweep's privacy policy: your Gmail goes straight from Google to your device. No servers of ours, no analytics, no third parties.">
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root { --app-accent: #b09474; --app-accent-ink: #77644e; --big-letter: "S"; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">
+      <img src="icons/logo.jpeg" alt="Burning Squirrel Productions logo">
+      Burning Squirrel Productions
+    </div>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="breadcrumb"><a href="sweep.html">Sweep</a></div>
+
+<section class="hero">
+  <div class="app-icon"><img src="icons/sweep.png" alt="Sweep app icon" onerror="this.remove()"><span class="icon-fallback">🧹</span></div>
+  <p class="meta-line">Sweep &middot; Privacy Policy</p>
+  <h1>Privacy</h1>
+  <p class="tagline">The short version: your mail goes straight from Google to your iPhone or iPad. We have no server in between, so we never see, store, or receive any of it.</p>
+</section>
+
+<section id="google" class="legal-section">
+  <h2 class="section-title">Your Google Account</h2>
+  <p class="about-text">When you add a Gmail account, you sign in on Google's own sign-in page. Sweep never sees your password. Google then gives Sweep permission to use the Gmail API on your behalf, with this single permission (scope):</p>
+  <p class="about-text"><strong>https://www.googleapis.com/auth/gmail.modify</strong>: read, compose, send, and organize your Gmail messages. Sweep uses it only for the things you see in the app:</p>
+  <div class="tags">
+    <div class="tag">Reading your threads and messages to show your inbox</div>
+    <div class="tag">Reading your email address to label the account</div>
+    <div class="tag">Changing labels when you mark done, pin, mark read, or move to trash</div>
+    <div class="tag">Sending replies and new messages you write</div>
+  </div>
+  <p class="about-text">Sweep never deletes mail permanently. Anything you remove goes to Gmail's Trash, where Gmail's usual rules apply.</p>
+  <p class="about-text">The keys Google issues for that permission (the access and refresh tokens) are stored in the iOS Keychain on your device, marked so they are never synced to iCloud or moved to another device.</p>
+</section>
+
+<section id="limited-use" class="legal-section">
+  <h2 class="section-title">Google API Services User Data</h2>
+  <p class="about-text">Sweep's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <p class="about-text">In practice, that means your Gmail data is used only to provide and improve the features you see in Sweep. It is not transferred to anyone, used for advertising, sold, or used to train AI or machine-learning models. No person, including us, reads it. The only exception would be if the law required it, and because the data never reaches us, we have nothing we could hand over.</p>
+</section>
+
+<section id="on-device" class="legal-section">
+  <h2 class="section-title">On Your Device</h2>
+  <p class="about-text">Sweep keeps a cache of your recent mail in its private storage on your iPhone or iPad so the inbox opens fast and works offline. That cache sits in a folder excluded from iCloud and computer backups, so your mail is never copied into them. After a restore, it downloads again from Gmail.</p>
+  <p class="about-text">Bundles, highlight cards (orders, trips, events), and checks on whether a sender is who they claim to be are all worked out on the device, from the mail already there. Suggested replies, where available, come from Apple's on-device Apple Intelligence model. Nothing is sent anywhere to produce them.</p>
+  <p class="about-text">Reminders you create in Sweep are stored on the device, plus a small backup file that is included in your iCloud or computer backup so they survive a restore. If you allow it, Sweep also puts each reminder in Apple's Reminders app, where your own Reminders and iCloud settings apply.</p>
+  <p class="about-text">A few preferences, such as appearance, text size, notification and image settings, are stored using Apple's standard UserDefaults mechanism. They are settings, not content.</p>
+</section>
+
+<section id="network" class="legal-section">
+  <h2 class="section-title">Who Sweep Talks To</h2>
+  <p class="about-text">Sweep connects only to Google: Google's sign-in and token endpoints, and the Gmail API. To check for new mail while the app is closed, it asks iOS to wake it now and then. There's no push server of ours.</p>
+  <p class="about-text">Emails can contain remote images, including tracking pixels that tell a sender when you've opened a message. Sweep blocks them by default. They load only if you tap Load images, or turn on loading them automatically in Settings. When they load, your device fetches them directly from the sender's servers, just as any mail app would. Scripts in email never run.</p>
+  <p class="about-text">New-mail and reminder notifications are created locally on your device. They don't go through Apple's or anyone else's push service.</p>
+</section>
+
+<section id="never" class="legal-section">
+  <h2 class="section-title">What We Never Do</h2>
+  <div class="tags">
+    <div class="tag">No servers of ours that see your mail</div>
+    <div class="tag">No Sweep account to create</div>
+    <div class="tag">No analytics or crash reporting</div>
+    <div class="tag">No advertising or ad SDKs</div>
+    <div class="tag">No AI training on your mail</div>
+    <div class="tag">Nothing sold, shared, or sent anywhere on our behalf</div>
+  </div>
+</section>
+
+<section id="control" class="legal-section">
+  <h2 class="section-title">Your Control</h2>
+  <p class="about-text">Removing an account in Sweep's Settings tells Google to revoke Sweep's access, deletes its keys from the Keychain, and deletes that account's cached mail from the device. Nothing changes in Gmail itself. Your reminders stay.</p>
+  <p class="about-text">You can also revoke Sweep's access at any time from your Google Account at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>. Deleting the app removes everything it stored on the device.</p>
+</section>
+
+<section id="fine-print" class="legal-section legal-fine-print" style="padding-bottom: 40px;">
+  <h2 class="section-title">The Fine Print</h2>
+  <h3>Children</h3>
+  <p class="about-text">Sweep is not directed at children under 13 and doesn't knowingly collect information from anyone. Given everything above, that's true no matter who uses it.</p>
+  <h3>Changes</h3>
+  <p class="about-text">If this policy ever changes, for example because a future version handles data differently, this page will be updated and the date below will change. If Sweep ever needs to use your Google data in a new way, it will ask you first.</p>
+  <h3>Contact</h3>
+  <p class="about-text">Questions about this policy or the app can go to <a class="contact-email" style="font-size: 1rem;" href="mailto:apps@burningsquirrelproductions.com">apps@burningsquirrelproductions.com</a>.</p>
+  <p class="legal-updated">Last updated 2026-10-13</p>
+</section>
+
+<footer>
+  &copy; 2026 Burning Squirrel Productions. All rights reserved.
+</footer>
+
+</body>
+</html>
